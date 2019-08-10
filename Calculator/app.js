@@ -68,6 +68,15 @@ keys.addEventListener('click', e => {
       i = 1
     }
 
+    if(action === 'clear'){
+      delete calculator.dataset.operator;
+      delete calculator.dataset.previousKeyType;
+      delete calculator.dataset.firstValue;
+
+      display.textContent = '0';
+      displayedNum = '0';
+    }
+
     if (action === 'calculate') {
       i = 0;
 
