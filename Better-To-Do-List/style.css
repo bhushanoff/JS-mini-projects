@@ -1,0 +1,72 @@
+body{
+        background-color: rgb(210, 252, 252);
+        margin: 0;
+        padding: 0;
+}
+
+header{
+        background-color: rgba(59, 187, 238, 0.979);
+        margin:0;
+        height: 90px;
+        text-align: center;
+}
+.container{
+        display: flex;
+        margin: auto;
+        width: 95%;
+}
+
+#big-plus{
+        margin: 5px auto 5px auto;
+}
+
+#parent-folder{
+        /* background-color: red; */
+        width: 100%;
+}
+
+.folder-div{
+        width: 100%;
+        /* background-color: burlywood; */
+        display: flex;
+}
+
+.folder-section{
+        display: flex;
+        width: 33%;
+        background-color: blueviolet;
+        justify-content: center;
+        margin: 2px;
+        height: 180px;
+}
+
+.new-folder{
+        width: 30%;
+        height: 50px;
+        border-radius: 10px;
+        /* background-color: blue; */
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+}
+
+.input-folder{
+        width: 100px;
+        height: 24px;
+        border-radius: 6px;
+        background-color: lightblue;
+        margin-right: 15px;
+}
+
+.check-button{
+        margin: 0 15px 0 15px;
+}
+
+/* ************text************ */
+.big-text{
+        color: white;
+        font-size: 50px;
+        font-family: 'Bowlby One SC', cursive;
+        margin: 0 auto 0 auto;
+        justify-items: center;
+}
