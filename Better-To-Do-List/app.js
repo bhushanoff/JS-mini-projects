@@ -17,6 +17,7 @@
 // class of FolderSection --> folder-section
 // class of smallPlusButton --> parent-folder
 
+
 var parentFolder = document.getElementById('parent-folder');
 var bigPlusButton = document.querySelector('#big-plus');
 var container = document.querySelector('.container');
@@ -41,16 +42,17 @@ bigPlusButton.addEventListener("click", function(){
     console.log(lastFolderSection);
     
     var inputFolder = document.createElement("input");
+    var checkButton = document.createElement("i");
     var smallPlusButton = document.createElement("i");
 
     inputFolder.type = "text"; inputFolder.className = 'input-folder';     inputFolder.placeholder = "New Folder";
-    smallPlusButton.className = 'fas fa-plus-circle fa-2x'; smallPlusButton.className = "small-plus";
+    checkButton.className = "fas fa-check-circle fa-2x check-button";
+    smallPlusButton.className = 'fas fa-plus-circle fa-2x small-plus';
 
     lastFolderSection.append(inputFolder);
+    lastFolderSection.append(checkButton);
     lastFolderSection.append(smallPlusButton);
     lastFolderDiv.append(lastFolderSection);
 
-    i++;
-    console.log('i has value ',i);
-    
+    i++;    
 })
