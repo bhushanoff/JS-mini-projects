@@ -1,29 +1,40 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>TDL</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
-        <link href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC|Ceviche+One|Lobster|Luckiest+Guy|Racing+Sans+One|Shrikhand|Titan+One&display=swap" rel="stylesheet">
-</head>
-<body>
-        <header class="container">
-                <p class="big-text">To Do List</p>
-        </header>
-        <div class="container">
-                <div id="parent-folder">    <!--only folders here-->
-                        <i class="far fa-plus-square fa-2x" id="big-plus"></i>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>TDL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC|Ceviche+One|Lobster|Luckiest+Guy|Racing+Sans+One|Shrikhand|Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <p class="big-text">To Do List</p>
+    </header>
+    <button class="btn btn-success" id="big-plus">
+      <i class="far fa-plus-square fa-2x" onClick="addFolder()"></i><br />
+    </button>
+    <div class="container-fluid">
+      <center>
+        <div id="parent-folder" class="row">
+          <!--only folders here-->
         </div>
-        <script src="app.js"></script>
-</body>
+      </center>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
