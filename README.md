@@ -3,6 +3,7 @@ Documenting my journey of learning JS
 
 Projects made as of now:
   * To-Do-List
+  * Calculator
   
  Projects in progress:
-  * Calculator
+  * Better To Do List
