@@ -1,72 +1,78 @@
+
+
+
+
+
+
+
+
+
  body {
   background-color: black;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background: black;
-  margin: 0;
-  height: 10vh;
-  text-align: center;
-}
-#big-plus {
-  position: absolute;
-  right: 10%;
-  top: 10%;
-  cursor: pointer;
-  font-size: 2em;
+.parent{
+  display: flex;
+  min-width: 100%;
 }
 
-#parent-folder {
-  /* background-color: red; */
-  width: 100%;
-  display: block;
-  margin-top: 20px;
-  align-items: center;
-}
-/* ************text************ */
-.big-text {
-  color: white;
-  font-size: 8vh;
-  line-height: 10vh;
-  font-family: monospace;
-  margin: 0 auto 0 auto;
-  justify-items: center;
-  left: 45%;
-  animation: fade-in 0.5s infinite alternate;
-}
-.childFolder {
-  height: 600px;
+.card{
+  min-height: 250px;
   width: 20%;
+  background: blue;
   min-width: 400px;
   border: 0px;
   border-radius: 10px;
   margin: 20px;
-  align-self: center;
-  background: -moz-linear-gradient(to bottom right, #31afd5, black);
-  background: linear-gradient(to bottom right, #31afd5, black);
+  text-align: center;
+  cursor: context-menu;
+  background: -moz-linear-gradient(to bottom right, yellow, violet);
+  background: linear-gradient(to bottom right, yellow, violet);
   align-items: center;
   justify-content: center;
   transition: all 2s ease-in-out;
+  /* display:block; */
 }
-.childFolder h1 {
-  color: white;
-  font-size: 5vh;
+
+.small-plus{
+  color: black;
+  border:0;
+  margin: 0 10px;
+  cursor: pointer;
+  background: none;
 }
-@-moz-keyframes fade-in {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.task{
+  display: flex;
 }
-@keyframes fade-in {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.task-list{
+  display: block;
+  /* background: red; */
+}
+
+.task-list,.small-plus,.card-name{
+  margin-bottom: 15px;
+}
+
+.task-name,.big-trash,.big-edit{
+  margin-left:10px;
+  background: none;
+  border: none;
+}
+
+.fa-trash,.fa-edit{
+  float: right;
+}
+
+.task-name{
+  /* background-color: red; */
+  color:black;
+  /* max-width: 50px; */
+}
+
+ul{
+  list-style: none;
 }
